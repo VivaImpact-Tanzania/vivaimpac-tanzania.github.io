@@ -13,7 +13,7 @@
       box-sizing: border-box;
     }
 
-    body {
+  body {
       font-family: 'Open Sans', sans-serif;
       line-height: 1.6;
       color: #111;
@@ -21,13 +21,13 @@
       scroll-behavior: smooth;
     }
 
-    .container {
+  .container {
       width: 90%;
       max-width: 1200px;
       margin: auto;
     }
 
-    /* Navbar */
+   /* Navbar */
     .navbar {
       background-color: #000; /* black for strong header */
       color: white;
@@ -38,13 +38,13 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
 
-    .navbar .container {
+  .navbar .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    .logo {
+  .logo {
       font-size: 1.8rem;
       font-weight: bold;
       color: #00bfa6; /* teal accent */
@@ -52,26 +52,26 @@
       letter-spacing: 2px;
     }
 
-    .nav-links {
+   .nav-links {
       list-style: none;
       display: flex;
       gap: 2rem;
       align-items: center;
     }
 
-    .nav-links li a {
+  .nav-links li a {
       color: white;
       text-decoration: none;
       font-weight: 600;
       transition: color 0.3s ease;
     }
 
-    .nav-links li a:hover,
+  .nav-links li a:hover,
     .nav-links li a.active {
       color: #00bfa6;
     }
 
-    #nav-toggle {
+  #nav-toggle {
       display: none;
       background: none;
       border: none;
@@ -80,7 +80,7 @@
       cursor: pointer;
     }
 
-    /* Hero Section */
+  /* Hero Section */
     .hero-section {
       background: url('https://via.placeholder.com/1200x500') center center/cover no-repeat;
       color: white;
@@ -89,7 +89,7 @@
       position: relative;
     }
 
-    .hero-section::after {
+  .hero-section::after {
       content: '';
       position: absolute;
       top:0; left:0; right:0; bottom:0;
@@ -97,57 +97,57 @@
       z-index: 1;
     }
 
-    .hero-content {
+   .hero-content {
       position: relative;
       z-index: 2;
       max-width: 700px;
       margin: 0 auto;
     }
 
-    .hero-content h1 {
+  .hero-content h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
       letter-spacing: 1.5px;
     }
 
-    .hero-content p {
+   .hero-content p {
       font-size: 1.3rem;
       line-height: 1.5;
     }
 
-    /* Sections */
+   /* Sections */
     section.section {
       padding: 4rem 1rem;
     }
 
-    section.dark-section {
+   section.dark-section {
       background-color: #000;
       color: #00bfa6;
     }
 
-    section.dark-section ul {
+   section.dark-section ul {
       list-style: inside disc;
       margin-top: 1rem;
     }
 
-    section ul {
+  section ul {
       margin-top: 1rem;
       list-style: inside disc;
     }
 
-    section ul li {
+  section ul li {
       margin-bottom: 0.7rem;
       font-size: 1.1rem;
     }
 
-    section p {
+  section p {
       font-size: 1.1rem;
       max-width: 900px;
       margin-top: 1rem;
       margin-bottom: 1.5rem;
     }
 
-    /* Images in sections */
+  /* Images in sections */
     section img {
       max-width: 100%;
       height: auto;
@@ -156,11 +156,10 @@
       box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     }
 
-    /* Contact Section */
+  /* Contact Section */
     .contact-section {
       background-color: #f9f9f9;
     }
-
     .contact-info {
       display: flex;
       flex-wrap: wrap;
@@ -168,26 +167,26 @@
       margin-bottom: 3rem;
     }
 
-    .contact-info > div {
+   .contact-info > div {
       flex: 1 1 300px;
     }
 
-    .contact-info h3 {
+   .contact-info h3 {
       color: #000;
       margin-bottom: 0.8rem;
       font-weight: 700;
     }
 
-    .contact-info p a {
+  .contact-info p a {
       color: #00bfa6;
       text-decoration: none;
     }
 
-    .contact-info p a:hover {
+  .contact-info p a:hover {
       text-decoration: underline;
     }
 
-    /* Contact form */
+   /* Contact form */
     form {
       max-width: 600px;
       background: white;
@@ -195,14 +194,12 @@
       border-radius: 8px;
       box-shadow: 0 3px 15px rgba(0,0,0,0.1);
     }
-
     form label {
       display: block;
       margin-bottom: 0.5rem;
       font-weight: 600;
       color: #000;
     }
-
     form input[type="text"],
     form input[type="email"],
     form textarea {
@@ -215,19 +212,19 @@
       transition: border-color 0.3s ease;
     }
 
-    form input[type="text"]:focus,
+   form input[type="text"]:focus,
     form input[type="email"]:focus,
     form textarea:focus {
       border-color: #00bfa6;
       outline: none;
     }
 
-    form textarea {
+  form textarea {
       resize: vertical;
       font-family: inherit;
     }
 
-    form button {
+   form button {
       background-color: #00bfa6;
       color: white;
       border: none;
@@ -239,11 +236,11 @@
       transition: background-color 0.3s ease;
     }
 
-    form button:hover {
+  form button:hover {
       background-color: #008f7f;
     }
 
-    /* Footer */
+  /* Footer */
     footer {
       background-color: #000;
       color: white;
@@ -252,7 +249,6 @@
       font-size: 0.9rem;
       margin-top: 4rem;
     }
-
     .footer-content {
       max-width: 1200px;
       margin: auto;
@@ -262,24 +258,24 @@
       align-items: center;
     }
 
-    .footer-nav {
+   .footer-nav {
       list-style: none;
       display: flex;
       gap: 1.5rem;
     }
 
-    .footer-nav li a {
+  .footer-nav li a {
       color: #00bfa6;
       text-decoration: none;
       font-weight: 600;
       transition: color 0.3s ease;
     }
 
-    .footer-nav li a:hover {
+  .footer-nav li a:hover {
       color: #008f7f;
     }
 
-    /* Responsive */
+  /* Responsive */
     @media (max-width: 768px) {
       .nav-links {
         position: absolute;
@@ -292,25 +288,20 @@
         transition: transform 0.3s ease;
         border-radius: 0 0 0 10px;
       }
-
-      .nav-links.nav-open {
+    .nav-links.nav-open {
         transform: translateX(0);
       }
-
       .nav-links li {
         margin: 1.5rem 0;
         text-align: center;
       }
-
       #nav-toggle {
         display: block;
       }
-
       .footer-content {
         flex-direction: column;
         gap: 1rem;
       }
-
       .contact-info {
         flex-direction: column;
       }
@@ -343,7 +334,6 @@
         <p>Empowering communities across Tanzania through inclusive programs and expert consultancy.</p>
       </div>
     </section>
-
     <section id="ngo-arm" class="section" aria-labelledby="ngo-arm-title">
       <div class="container">
         <h2 id="ngo-arm-title">Our NGO Arm</h2>
@@ -363,7 +353,6 @@
         <img src="https://via.placeholder.com/600x350" alt="VivaImpact NGO team working with community" />
       </div>
     </section>
-
     <section id="consultancy" class="section dark-section" aria-labelledby="consultancy-title">
       <div class="container">
         <h2 id="consultancy-title">Our Consultancy Services</h2>
@@ -383,7 +372,6 @@
         <img src="https://via.placeholder.com/600x350" alt="Consultancy meeting and training" />
       </div>
     </section>
-
     <section id="contact" class="section contact-section" aria-labelledby="contact-title">
       <div class="container">
         <h2 id="contact-title">Contact Us</h2>
@@ -405,17 +393,13 @@
             </p>
           </div>
         </div>
-
         <form id="contact-form" action="https://formspree.io/f/mvovwvvr" method="POST" novalidate>
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
-
           <label for="email">Email</label>
           <input type="email" id="email" name="_replyto" placeholder="Your email address" required autocomplete="email" />
-
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
-
           <button type="submit">Send Message</button>
         </form>
       </div>
