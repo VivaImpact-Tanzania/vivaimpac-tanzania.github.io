@@ -112,8 +112,8 @@
       <button type="submit">Send Message</button>
     </form>
     <p>Email: info@vivaimpact.org</p>
-    <p>Phone: +255 700 000 000</p>
-    <p>Address: Placeholder, Tanzania</p>
+    <p>Phone: +255 768 055 030</p>
+    <p>Address: Dar es Salaam, Tanzania</p>
     <div class="map-placeholder">[Map here]</div>
   </section>
 
