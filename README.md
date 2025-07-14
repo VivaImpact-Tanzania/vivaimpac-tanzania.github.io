@@ -1,168 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VivaImpact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VivaImpact | Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
     body {
-      background: linear-gradient(to right, #f9f9f9, #f2f2f2);
-      color: #222;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f5f5f5;
+      color: #333;
     }
-
     header {
-      background-color: #000;
-      padding: 20px;
-      color: #fff;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #222;
+      background: #0f4c5c;
+      padding: 1rem 2rem;
+      color: white;
       display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 10px 0;
+      justify-content: space-between;
+      align-items: center;
     }
-
     nav a {
-      color: #fff;
+      color: white;
+      margin-left: 1.5rem;
       text-decoration: none;
       font-weight: 600;
     }
-
     .hero {
-      background-color: #004d4d;
-      color: #fff;
-      padding: 60px 20px;
+      background: linear-gradient(to right, #ff7f50, #1abc9c);
+      color: white;
+      padding: 4rem 2rem;
       text-align: center;
     }
-
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
     .section {
-      padding: 40px 20px;
-      background-color: #fff;
-      border-bottom: 2px solid #eee;
+      padding: 3rem 2rem;
     }
-
-    .section.dark {
-      background-color: #111;
-      color: #f1f1f1;
+    .arms-container {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
     }
-
-    .highlight {
-      color: #ff6600;
+    .arm-box {
+      background: white;
+      border-left: 5px solid #f39c12;
+      padding: 2rem;
+      flex: 1;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
+    .arm-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
-
-    footer {
-      background-color: #000;
-      color: #fff;
-      padding: 20px;
+    .arm-box h2 {
+      color: #0f4c5c;
+    }
+    .footer {
+      background: #2c3e50;
+      color: white;
+      padding: 2rem;
       text-align: center;
     }
-
-    .social-icons a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
+    .contact-icons i {
+      font-size: 1.2rem;
+      margin: 0 0.5rem;
+      color: #ff7f50;
     }
-
-    .image-placeholder {
-      width: 100%;
-      height: 200px;
-      background-color: #ccc;
+    .contact-info {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+    .social-icons a {
+      margin: 0 0.5rem;
+      color: white;
+      font-size: 1.3rem;
+    }
+    .section-title {
+      text-align: center;
+      color: #0f4c5c;
+      font-size: 2rem;
+      margin-bottom: 2rem;
     }
   </style>
 </head>
-
 <body>
   <header>
-    <h1>VivaImpact</h1>
-    <p>Empowering Progress. Driving Change.</p>
+    <div><strong>VivaImpact</strong></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#arms">Our Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#ngo">NGO Arm</a>
-    <a href="#consultancy">Consultancy Arm</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section class="hero" id="home">
-    <h2>Welcome to VivaImpact</h2>
-    <p>We are a purpose-driven organization building impactful solutions through partnerships, research and hands-on action in Tanzania.</p>
+  <section class="hero">
+    <h1>Powering Impact. Driving Change.</h1>
+    <p>VivaImpact exists to empower communities through inclusive development solutions and strategic consultancy.</p>
   </section>
 
-  <section class="section">
-    <h2>General Overview</h2>
-    <p>VivaImpact works to address critical social and development challenges through two pillars: our NGO arm, which runs transformative community programs, and our consultancy arm, which supports organizations, donors, and governments to deliver stronger results across sectors.</p>
-  </section>
-
-  <section class="section dark" id="ngo">
-    <h2>NGO Arm</h2>
-    <p>Our NGO work is centered on empowering underserved communities in Tanzania, especially women and youth. We design and implement programs that improve access to health, education, livelihoods, and dignity.</p>
-
-    <div class="grid">
-      <div>
-        <div class="image-placeholder"></div>
-        <h3>Our Approach</h3>
-        <p>Locally driven, data-informed and partnership-based. We co-create solutions with communities, not for them.</p>
+  <section id="arms" class="section">
+    <div class="section-title">Explore Our Two Focus Areas</div>
+    <div class="arms-container">
+      <div class="arm-box" onclick="location.href='#ngo';">
+        <h2>NGO Arm</h2>
+        <p>We focus on community-based interventions in gender, youth empowerment, and access to basic services in Tanzania.</p>
       </div>
-      <div>
-        <div class="image-placeholder"></div>
-        <h3>Our Values</h3>
-        <p>Integrity, dignity, equity, collaboration, and accountability shape everything we do.</p>
+      <div class="arm-box" onclick="location.href='#consultancy';">
+        <h2>Consultancy Arm</h2>
+        <p>We provide strategic advisory services to nonprofits, foundations, and businesses aiming for sustainable impact.</p>
       </div>
     </div>
   </section>
 
-  <section class="section" id="consultancy">
-    <h2>Consultancy Arm</h2>
-    <p>Through VivaImpact Consultancy, we help development actors work smarter. Our team brings deep expertise in gender, youth, rural development, M&E, communications and more to help partners deliver practical, people-focused results.</p>
+  <section id="ngo" class="section" style="background:#e6f0f1">
+    <div class="section-title">NGO Arm</div>
+    <p>
+      Our NGO branch champions access to education, water and sanitation, gender justice, and inclusive economic empowerment. We prioritize collaboration with local actors and a rights-based, non-patronizing approach.
+    </p>
+  </section>
 
-    <div class="grid">
-      <div>
-        <div class="image-placeholder"></div>
-        <h3>Services</h3>
-        <p>We offer program design, evaluations, strategic planning, training, facilitation and research tailored to your needs.</p>
-      </div>
-      <div>
-        <div class="image-placeholder"></div>
-        <h3>Who We Work With</h3>
-        <p>International and local NGOs, foundations, donors, community-based groups and social enterprises across Tanzania and the region.</p>
-      </div>
+  <section id="consultancy" class="section" style="background:#fef5e7">
+    <div class="section-title">Consultancy Arm</div>
+    <p>
+      VivaImpact offers practical, research-based, and people-centered consultancy services in M&E, gender, rural development, communications, microfinance, and institutional strengthening. Our goal is to support organizations to do good—better.
+    </p>
+  </section>
+
+  <section id="about" class="section">
+    <div class="section-title">About VivaImpact</div>
+    <p>
+      Founded in Tanzania, VivaImpact is a mission-driven organization operating through two complementary arms: an NGO and a consultancy. Though our programs are yet to launch, we are building partnerships and groundwork to ensure long-term impact.
+    </p>
+  </section>
+
+  <section id="contact" class="section" style="background: #eaeaea">
+    <div class="section-title">Contact Us</div>
+    <div class="contact-icons">
+      <p><i class="fas fa-envelope"></i> contact@viva-impact.org</p>
+      <p><i class="fas fa-map-marker-alt"></i> Dar es Salaam, Tanzania</p>
     </div>
-  </section>
-
-  <section class="section dark" id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: hello@viva-impact.org</p>
-    <p>Instagram: <a href="https://www.instagram.com/vivaimpact_tz" style="color: #ff6600;">@vivaimpact_tz</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/company/107254206" style="color: #ff6600;">VivaImpact</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 VivaImpact. All rights reserved.</p>
     <div class="social-icons">
-      <a href="https://www.instagram.com/vivaimpact_tz" target="_blank">Instagram</a>
-      <a href="https://www.linkedin.com/company/107254206" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/vivaimpact_tz" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/107254206/admin/dashboard/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
-  </footer>
-</body>
+    <div class="contact-info">
+      © 2025 VivaImpact. All rights reserved.
+    </div>
+  </section>
 
+</body>
 </html>
