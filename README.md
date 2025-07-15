@@ -8,8 +8,8 @@ VivaImpact is dedicated to driving equity and dignity through community-focused 
 
 ## File Structure
 
-- `index.html` — Homepage  
-- `pages/ngo-arm.html` — NGO Arm page  
-- `pages/consultancy-arm.html` — Consultancy Arm page  
-- `pages/careers.html` — Careers page  
-- `styles.css` — Shared CSS styles  
+- Homepage  
+- NGO Arm page  
+- Consultancy Arm page  
+- Careers page  
+- Shared CSS styles  
