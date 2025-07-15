@@ -18,4 +18,4 @@ VivaImpact is dedicated to driving equity and dignity through community-focused 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/vivaimpact_website.git
+   git clone https://github.com/vivaimpact-website/vivaimpact_website.git
