@@ -1,6 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f4f7f9; /* light grey */
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  background: linear-gradient(90deg, #00796b, #f57c00);
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header img {
+  max-width: 120px;
+  margin-bottom: 0.5rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+
+header p {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #004d40;
+  padding: 0.8rem 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background: #f57c00;
+  color: #004d40;
+  box-shadow: 0 2px 6px rgba(245,124,0,0.6);
+}
+
+/* Main content */
+.section {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Sections */
+h2 {
+  color: #00796b;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  border-bottom: 3px solid #f57c00;
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  color: #f57c00;
+  margin-bottom: 0.6rem;
+}
+
+/* Arms Section */
+.arms {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.arm-box {
+  background: white;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  flex: 1 1 300px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.arm-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(245,124,0,0.5);
+}
+
+.arm-box a {
+  color: #00796b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.arm-box a:hover {
+  text-decoration: underline;
+}
+
+/* Projects, Team, Join Us */
+.project-section p,
+.team-list .team-member,
+.join-box p {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.07);
+  color: #444;
+}
+
+/* Team Members */
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.team-member {
+  flex: 1 1 280px;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  color: #333;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+.team-member strong {
+  display: block;
+  font-size: 1.15rem;
+  color: #00796b;
+  margin-bottom: 0.3rem;
+}
+
+.team-member:hover {
+  background: #fbe9e7;
+}
+
+/* Join Box */
+.join-box {
+  background: #00796b;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.1);
+}
+
+footer a {
+  color: #f57c00;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 700;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Icons in footer */
+.icons {
+  margin-right: 0.4rem;
+}
+
+/* Job Listings */
+.job-listing {
+  background: white;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+}
+
+.job-listing:hover {
+  background: #e0f2f1;
+}
+
+/* Slideshow Placeholder */
+.slideshow-placeholder {
+  background: #00796b;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  font-style: italic;
+  margin-top: 2rem;
+  box-shadow: 0 5px 15px rgba(0,121,107,0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .arms {
+    flex-direction: column;
+  }
+
+  .team-list {
+    flex-direction: column;
+  }
+}
+
+
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
