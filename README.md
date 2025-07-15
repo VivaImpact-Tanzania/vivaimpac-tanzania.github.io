@@ -12,4 +12,3 @@ VivaImpact is dedicated to driving equity and dignity through community-focused 
 - NGO Arm page  
 - Consultancy Arm page  
 - Careers page  
-- Shared CSS styles  
