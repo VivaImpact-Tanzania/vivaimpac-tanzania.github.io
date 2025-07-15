@@ -1,4 +1,4 @@
-# VivaImpact Website
+# HOME PAGE
 
 This repository contains the source code for the VivaImpact website, including the homepage and key sections like NGO Arm, Consultancy Arm, and Careers pages.
 
