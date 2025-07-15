@@ -5,18 +5,276 @@ This repository contains the source code for the VivaImpact website, including t
 ## Overview
 
 VivaImpact is dedicated to driving equity and dignity through community-focused projects in areas such as gender equality, livelihoods, WASH, and digital inclusion.
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VivaImpact | Empowering Lives. Delivering Excellence</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    /* Base Reset and Font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-## File Structure
+    body {
+      background-color: #f4f7f9;
+      color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-- `index.html` — Homepage  
-- `pages/ngo-arm.html` — NGO Arm page  
-- `pages/consultancy-arm.html` — Consultancy Arm page  
-- `pages/careers.html` — Careers page  
-- `styles.css` — Shared CSS styles  
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #00796b, #f57c00);
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-## Viewing Locally
+    header img {
+      max-width: 120px;
+      margin-bottom: 0.5rem;
+    }
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/vivaimpact_website.git
+    header h1 {
+      font-size: 2rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+      margin-bottom: 0.25rem;
+    }
 
+    header p {
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #004d40;
+      padding: 0.8rem 0;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: #f57c00;
+      color: #004d40;
+      box-shadow: 0 2px 6px rgba(245, 124, 0, 0.6);
+    }
+
+    /* Main Content Area */
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      flex-grow: 1;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      color: #00796b;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #f57c00;
+      padding-bottom: 0.3rem;
+    }
+
+    p {
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    /* Arms Section */
+    .arms {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .arm-box {
+      background-color: white;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      flex: 1 1 300px;
+      padding: 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .arm-box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 12px rgba(245, 124, 0, 0.5);
+    }
+
+    .arm-box h3 {
+      color: #f57c00;
+      margin-bottom: 0.6rem;
+    }
+
+    .arm-box p {
+      margin-bottom: 0;
+    }
+
+    .arm-box a {
+      color: #00796b;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .arm-box a:hover {
+      text-decoration: underline;
+    }
+
+    /* Team Section */
+    .team-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .team-member {
+      flex: 1 1 280px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 1rem 1.25rem;
+      font-size: 0.95rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .team-member strong {
+      display: block;
+      font-size: 1.15rem;
+      color: #00796b;
+      margin-bottom: 0.3rem;
+    }
+
+    .team-member:hover {
+      background-color: #fbe9e7;
+    }
+
+    /* Join Section */
+    .join-box {
+      background-color: #00796b;
+      color: white;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .join-box a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: auto;
+      font-size: 0.9rem;
+      box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer a {
+      color: #f57c00;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      font-weight: 700;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+
+      .arms,
+      .team-list {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="/assets/logo-placeholder.png" alt="VivaImpact Logo" />
+    <h1>Welcome to VivaImpact</h1>
+    <p>EMPOWERING LIVES. DELIVERING EXCELLENCE</p>
+  </header>
+
+  <nav role="navigation" aria-label="Primary Navigation">
+    <a href="/index.html" class="active" aria-current="page">Home</a>
+    <a href="/pages/ngo-arm.html">NGO Arm</a>
+    <a href="/pages/consultancy-arm.html">Consultancy Arm</a>
+    <a href="/pages/careers.html">Careers</a>
+  </nav>
+
+  <main>
+    <section aria-labelledby="about-us">
+      <h2 id="about-us">About Us</h2>
+      <p>VivaImpact is dedicated to advancing inclusive development through strategic programs and consultancy. We focus on real change, clear impact, and people-centered solutions.</p>
+    </section>
+
+    <section aria-labelledby="vision">
+      <h2 id="vision">Our Vision</h2>
+      <p>To become a leading force in creating equitable opportunities and sustainable solutions for all.</p>
+    </section>
+
+    <section aria-labelledby="mission">
+      <h2 id="mission">Our Mission</h2>
+      <p>To empower individuals and communities through evidence-based interventions, capacity building, and tailored consultancy services.</p>
+    </section>
+
+    <section class="arms" aria-label="VivaImpact Arms">
+      <article class="arm-box" tabindex="0" role="region" aria-labelledby="ngo-arm-title">
+        <h3 id="ngo-arm-title">NGO Arm</h3>
+        <p>Working with communities to implement development projects that promote dignity, equity, and opportunity. <a href="/pages/ngo-arm.html">Learn more</a></p>
+      </article>
+
+      <article class="arm-box" tabindex="0" role="region" aria-labelledby="consultancy-arm-title">
+        <h3 id="consultancy-arm-title">Consultancy Arm</h3>
+        <p>Delivering technical expertise to organizations and institutions across sectors. <a href="/
