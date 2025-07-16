@@ -1,0 +1,264 @@
+/* === VivaImpact Clean CSS Theme === */
+
+/* Fonts & Color Variables */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+html {
+  font-size: 120%;  /* Simulates 120% zoom */
+  scroll-behavior:smooth;
+}
+
+:root {
+  --primary-color: #00796b;
+  --secondary-color: #f57c00;
+  --dark-primary: #005c3c;
+  --background-light: #f4f7f9;
+  --text-dark: #333;
+  --white: #fff;
+  --transition: 0.3s ease;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* Body */
+body {
+  background-color: var(--background-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+  min-height: 100vh;
+  font-size:120%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to top right, #005c3c 0%, #005c3c 50%, #d97c00 211%);
+
+  color: var(--white);
+  position:sticky;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  transition:all 3.0s ease-in-out;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom:1px;
+}
+
+header img {
+  max-width: 140px;
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--dark-primary);
+  padding: 0.4rem 0.3rem;
+  gap: 1rem;
+  white-space: nowrap;
+  margin-top: -3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  flex-wrap: nowrap;
+  z-index: 999;
+}
+
+nav a {
+  flex: 0 0 auto;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 0.4rem 0.3rem 0.3rem;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+  margin: 0 0.2rem;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.7px; /* 10% thinner */
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  border-radius: 4px; /* Slightly rounded bar ends */
+}
+
+nav a:hover::before,
+nav a.active::before {
+  background-color: var(--secondary-color);
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--secondary-color);
+}
+
+/* Main Content */
+main {
+  max-width: 1000	px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  flex-grow: 1;
+}
+
+h2 {
+  color: #2a5a2a;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.4rem;
+  letter-spacing: 0.3px;
+}
+
+p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Arms Section */
+.arms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.arm-box {
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  flex: 1 1 320px;
+  transition: transform var(--transition), box-shadow var(--transition), border var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.arm-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.arm-box h3 {
+  color: var(--text-dark);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.arm-box p {
+  color: var(--text-medium);
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.arm-box a {
+  color: #20696b;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color var(--transition);
+}
+
+.arm-box a:hover {
+  color: #206947;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, var(--dark-primary), #003d33);
+  color: #f0f0f0;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+  animation: fadeUp 0.6s ease-out;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer p {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+footer i {
+  margin-right: 0.4rem;
+  color: #f0f0f0; /* softened for visibility but not too bright */
+}
+
+footer a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+  color: #fffff;
+  transform: translateY(-2px);
+}
+
+.footer-copy {
+  font-size: 0.67rem;
+  color: #889880;
+  margin-top: 1rem;
+}
+
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .arms {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 0.3rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 0.4rem 0.3rem;
+    gap: 0.6rem;
+  }
+
+  nav a {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.2rem;
+    margin: 0 0.15rem;
+  }
+
+  nav a::before {
+    height: 2px;
+  }
+}
