@@ -30,7 +30,7 @@ This is the first version, and changes will be made progressively. File separati
 
 
 
-## 📌 Pages
+##  Pages
 
 - `index.html` – Homepage
 - `career.html` – Career opportunities
