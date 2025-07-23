@@ -1,10 +1,10 @@
 *
 !index.html
 !consultancy.html
-!career.html
+!careers.html
 !ngo.html
 !asset/imgs/*
-!asset/logo
-!asset/icons
+!asset/logo/
+!asset/icons/favicon.ico
 !js/script.js
 !style/*.css
