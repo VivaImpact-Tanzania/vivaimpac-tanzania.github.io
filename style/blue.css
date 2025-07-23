@@ -204,14 +204,7 @@
             padding: 0 2rem;
         }
 
-        .section h2 {
-            color: var(--primary-accent);
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 3rem;
-            position: relative;
-        }
-		        .sectionb h2 {
+        h2 {
             color: var(--primary-accent);
             font-size: 2.5rem;
             text-align: center;
@@ -219,7 +212,7 @@
             position: relative;
         }
 
-        .section h2::after {
+        h2::after {
             content: '';
             display: block;
             width: 80px;
@@ -228,6 +221,26 @@
             margin: 1rem auto 0;
             border-radius: 2px;
         }
+		.section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--primary-accent);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+.sectionb h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--primary-accent);
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
 		      .sectionb h2::after {
             content: '';
             display: block;
