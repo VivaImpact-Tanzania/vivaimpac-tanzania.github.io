@@ -11,6 +11,64 @@ html, body {
   width: 100%;
   overflow-x: hidden;
 }
+/* Navigation Styles */
+.nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: -29.7%;
+    margin-right: 0%;
+    gap: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 2.5px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.nav-links a.active {
+    color: black;
+    background: rgba(252, 255, 255, 1);
+    font-weight: 600;
+}
+
+/* Donate Button */
+.donate-button {
+    background: white;
+    color: #000000 !important;
+    padding: 0.75rem 1.5rem;
+	position: relative;
+	top: -110px;
+	z-index: 999;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3.3px 0px !important;
+}
+
+.donate-button:hover {
+    transform: translateY(-2px);
+
+}
 
 * {
   box-sizing: border-box;
@@ -28,6 +86,7 @@ body {
   line-height: 1.6;
   color: #333;
 }
+
 .fade-in-section {
   opacity: 0;
   transform: translateY(30px);
@@ -219,7 +278,6 @@ header {
   z-index: 999;
   color: white;
   background-image: url('../asset/imgs/hd.jpg');
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   background-attachment: fixed;
 }
 
@@ -254,64 +312,9 @@ header .nav-links .donate-button {
   max-width: 700px;
 }
 
-/* Navigation Styles */
-.nav {
-  display: flex;
-  align-items: center;
-  margin-bottom: -25%;
-  margin-right: -14%;
-  gap: 2rem;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.nav-links a:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
-}
-
-.nav-links a.active {
-  background: rgba(113, 128, 150, 0.2);
-  font-weight: 600;
-}
-
-/* Donate Button */
-.donate-button {
-  background: white;
-  background-color: rgba(255,0,0,0.5);
-  padding: 0.75rem 1.5rem;
-  border-radius: 25px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.donate-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-}
-
 /* Hamburger Menu Styles - CRITICAL FIX */
 .hamburger {
-  display: none; /* Will be shown on mobile */
+  display: none ; /* Will be shown on mobile */
   flex-direction: column;
   cursor: pointer;
   padding: 0.5rem;
@@ -398,61 +401,6 @@ header .nav-links .donate-button {
 }
 
 
-/* Navigation Styles */
-.nav {
-    display: flex;
-    align-items: center;
-    margin-bottom: -25%;
-    margin-right: -14%;
-    gap: 2rem;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.nav-links a:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-}
-
-.nav-links a.active {
-    background: rgba(113, 128, 150, 0.2);
-    font-weight: 600;
-}
-
-/* Donate Button */
-.donate-button {
-    background: white;
-    background-color: rgba(255,0,0,0.5);
-    color: var(--primary-accent) !important;
-    padding: 0.75rem 1.5rem;
-    border-radius: 25px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.donate-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-}
 
 header .nav-links .donate-button {
     background: white;
@@ -486,7 +434,7 @@ header .nav-links .donate-button {
 }
 
 .logo:hover {
-  transform: scale(1.05);
+  
 }
 
 /* Hamburger Menu Styles - CRITICAL FIX */
