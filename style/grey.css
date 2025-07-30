@@ -66,7 +66,6 @@ html, body {
 }
 
 .donate-button:hover {
-    transform: translateY(-2px);
     box-shadow: none !important;
 
 }
