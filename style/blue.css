@@ -125,7 +125,7 @@
 
         /* Donate Button */
         .donate-button {
-            background: var(--primary-accent);
+            background: white !important;
 			position: relative;
 			top: -110px;
 			z-index: 999;
