@@ -128,7 +128,7 @@ header .nav-links .donate-button {
     padding: 0.75rem 1.5rem;
 	position: reative;
 	top: -110px;
-    border-radius: 25px;
+    border-radius: 16px;
 	box-shadow: 0 3.3px 0px !important;
     font-weight: 600;
     text-decoration: none;
@@ -478,7 +478,7 @@ header .nav-links .donate-button {
     .nav-links a {
         font-size: 1.5rem;
         padding: 1rem 2rem;
-        border-radius: 8px;
+        border-radius: 2px !important;
         text-align: center;
         min-width: 200px;
     }
@@ -488,6 +488,7 @@ header .nav-links .donate-button {
         padding: 1rem 2rem !important;
 	position: reative !important;
 	top: 110px !important;
+	border-radius: 2px !important;
     }
 
     .header-container {
