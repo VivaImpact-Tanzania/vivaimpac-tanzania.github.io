@@ -431,7 +431,7 @@ header::before {
   .nav-links a {
       font-size: 1.5rem;
       padding: 1rem 2rem;
-      border-radius: 8px;
+      border-radius: 4px !important;
       text-align: center;
       min-width: 200px;
   }
@@ -439,6 +439,10 @@ header::before {
   .donate-button {
       font-size: 1.2rem;
       padding: 1rem 2rem;
+	      
+      border-radius:2.5px !important;
+      position:relative !important;
+      top:50px !important;
   }
 
   .logo img {
