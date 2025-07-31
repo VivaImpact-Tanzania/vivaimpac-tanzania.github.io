@@ -513,7 +513,7 @@ header .nav-links .donate-button {
   .nav-links a {
       font-size: 1.5rem;
       padding: 1rem 2rem;
-      border-radius: 8px;
+      border-radius: 2px;
       text-align: center;
       min-width: 200px;
   }
