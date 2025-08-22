@@ -80,12 +80,13 @@ header .nav-links .donate-button {
 }
 
 /* Navigation Styles */
+/* Navigation Styles */
 .nav {
-    display: flex;
-    align-items: center;
-    margin-bottom: -29.7%;
-    margin-right: 0%;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: -44.5vh; /* 30% of the visible height */
+  margin-right: 0%;
+  gap: 2rem;
 }
 
 .nav-links {
