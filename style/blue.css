@@ -43,7 +43,7 @@
         /* Header Styles */
         header {
             width: 100%;
-            min-height: 43vh;
+            height: 290.1px;
             position: sticky;
             top: 0;
             z-index: 999;
@@ -81,16 +81,36 @@
         .logo img {
             height: 250px;
             width: auto;
-            max-width: 700px;
+            max-width: 500px;
         }
 
         /* Navigation Styles */
         .nav {
             display: flex;
             align-items: center;
-			margin-bottom:-29.7%;
-			margin-right:0%;
+            margin-bottom: -265.1px;
+            margin-right: 0%;
             gap: 2rem;
+          }
+          
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            white-space: nowrap;
+            padding: 0.5rem 1rem;
+            border-radius: 2.5px;
+            transition: all 0.3s ease;
+            position: relative;
         }
 
         .nav-links {
@@ -101,17 +121,6 @@
             padding: 0;
             align-items: center;
         }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
         .nav-links a:hover {
             background: rgba(255, 255, 255, 0.1);
             transform: translateY(-2px);

@@ -39,7 +39,7 @@ body {
 /* Header Styles */
 header {
     width: 100%;
-    min-height: 43vh;
+    height:290.1px;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -76,7 +76,7 @@ header .nav-links .donate-button {
 .logo img {
     height: 250px;
     width: auto;
-    max-width: 700px;
+    max-width: 500px;
 }
 
 /* Navigation Styles */
@@ -84,7 +84,7 @@ header .nav-links .donate-button {
 .nav {
   display: flex;
   align-items: center;
-  margin-bottom: -44.5vh; /* 30% of the visible height */
+  margin-bottom: -265.1px;
   margin-right: 0%;
   gap: 2rem;
 }
@@ -102,6 +102,7 @@ header .nav-links .donate-button {
     color: white;
     text-decoration: none;
     font-weight: 500;
+    white-space: nowrap;
     padding: 0.5rem 1rem;
     border-radius: 2.5px;
     transition: all 0.3s ease;

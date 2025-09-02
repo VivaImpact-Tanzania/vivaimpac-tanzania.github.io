@@ -13,11 +13,11 @@ html, body {
 }
 /* Navigation Styles */
 .nav {
-    display: flex;
-    align-items: center;
-    margin-bottom: -29.7%;
-    margin-right: 0%;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: -265.1px;
+  margin-right: 0%;
+  gap: 2rem;
 }
 
 .nav-links {
@@ -30,13 +30,14 @@ html, body {
 }
 
 .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 2.5px;
-    transition: all 0.3s ease;
-    position: relative;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border-radius: 2.5px;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .nav-links a:hover {
@@ -272,7 +273,7 @@ h1, h2, h3, h4 {
 /* Header Styles */
 header {
   width: 100%;
-  min-height: 43vh;
+  height: 290.1px;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -312,7 +313,7 @@ header .nav-links .donate-button {
   max-width: 700px;
 }
 
-/* Hamburger Menu Styles - CRITICAL FIX */
+
 .hamburger {
   display: none ; /* Will be shown on mobile */
   flex-direction: column;
@@ -433,13 +434,8 @@ header .nav-links .donate-button {
 .logo img {
     height: 250px;
     width: auto;
-    max-width: 700px;
+    max-width: 500px;
 }
-
-.logo:hover {
-  
-}
-
 /* Hamburger Menu Styles - CRITICAL FIX */
 .hamburger {
     display: none; /* Will be shown on mobile */

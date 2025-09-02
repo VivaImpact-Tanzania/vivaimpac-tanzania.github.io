@@ -3,9 +3,9 @@
 !consultancy.html
 !career.html
 !ngo.html
-!asset/imgs/hd.jpg
-!asset/imgs/human.jpg
-!asset/logo/logo.jpg
-!asset/icons/favicon.ico
-!js/script.js
-!style/*.css
+!./asset/imgs/hd.jpg
+!./asset/imgs/human.jpg
+!./asset/logo/logo.jpg
+!./asset/icons/favicon.ico
+!./js/script.js
+!./style/*.css
