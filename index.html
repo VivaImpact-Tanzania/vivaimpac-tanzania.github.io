@@ -4,9 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | Viva-Impact</title>
-  <link rel="stylesheet" href="./style/orange.css" />
+  <link rel="stylesheet" href="./style/orange.css" rel="stylesheet"/>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
   <header>
@@ -47,7 +48,7 @@
     </section>
 
     <!-- Vision Section -->
-    <section class="sectionb fade-in-section">
+    <section class="sectionb" data-aos="fade-up">
       <div class="container">
         <h2>Our Vision</h2>
         <p class="intro-text">
@@ -59,7 +60,7 @@
     </section>
 
     <!-- Mission Section -->
-    <section class="section fade-in-section">
+    <section class="section" data-aos="fade-up">
       <div class="container">
         <h2>Our Mission</h2>
         <div class="mission-content">
@@ -69,7 +70,7 @@
           </p>
 
           <div class="arms-grid">
-            <div class="arm-box fade-in-section">
+            <div class="arm-box" data-aos="fade-up">
               <div class="arm-icon">
                 <i class="fas fa-hands-helping"></i>
               </div>
@@ -81,7 +82,7 @@
               <a href="./ngo.html" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
             </div>
 
-            <div class="arm-box fade-in-section">
+            <div class="arm-box" data-aos="fade-up">
               <div class="arm-icon">
                 <i class="fas fa-briefcase"></i>
               </div>
@@ -97,11 +98,11 @@
     </section>
 
     <!-- Team Members Section -->
-    <section class="members-section fade-in-section">
+    <section class="members-section" data-aos="fade-up">
       <div class="container">
         <h2>Our Team</h2>
         <div class="members-grid">
-          <div class="member-card fade-in-section">
+          <div class="member-card" data-aos="fade-up">
             <div class="member-photo">
               <img src="./asset/imgs/human.jpg" alt="Portrait of Ms. Joyce F. Rutatina" />
             </div>
@@ -114,7 +115,7 @@
             </div>
           </div>
 
-          <div class="member-card fade-in-section">
+          <div class="member-card" data-aos="fade-up">
             <div class="member-photo">
               <img src="./asset/imgs/human.jpg" alt="Portrait of Ms. Agnela Haule" />
             </div>
@@ -127,7 +128,7 @@
             </div>
           </div>
 
-          <div class="member-card fade-in-section">
+          <div class="member-card" data-aos="fade-up">
             <div class="member-photo">
               <img src="./asset/imgs/human.jpg" alt="Portrait of Ms. Grace Nifasha" />
             </div>
@@ -140,7 +141,7 @@
             </div>
           </div>
 
-          <div class="member-card fade-in-section">
+          <div class="member-card">
             <div class="member-photo">
               <img src="./asset/imgs/human.jpg" alt="Portrait of Ms. Debora Lwilla" />
             </div>
@@ -197,7 +198,17 @@
       </p>
     </div>
   </footer>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    //aos here
+    AOS.init({
+      duration: 1050,        // Default animation duration
+      easing: 'ease-in-out', // Easing function
+      once: true,           // Whether animation should happen only once
+      offset: 50,          // Offset (in px) from the original trigger point
+      delay: 0,             // Default delay
+    });
+  </script>
   <script src="./js/script.js"></script>
 </body>
 </html>

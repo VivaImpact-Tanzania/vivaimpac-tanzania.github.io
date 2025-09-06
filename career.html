@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viva Impact Careers - Join Us. Create Change.</title>
-    <link rel="stylesheet" href="./style/grey.css">
+    <link rel="stylesheet" href="./style/grey.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="theme-teal">
     <!-- Header -->
@@ -45,7 +46,7 @@
         </section>
 
         <!-- Open Positions Section -->
-        <section class ="section fade-in-section">
+        <section class ="section" data-aos="fade-up">
             <div class="container">
                 <h2>Open Positions</h2>
                 <div class="job-listings-grid">
@@ -71,7 +72,7 @@
         </section>
 
         <!-- Don't See a Role Section -->
-        <section class="section fade-in-section">
+        <section class="section" data-aos="fade-up">
             <div class="container">
                 <h2>Don't See a Role?</h2>
                 <p class="intro-text">We're growing fast. If you don't see a current opening that fits your profile but feel aligned with our mission, send your CV to <a href="mailto:careers@viva-impact.org" style="color: #202530; text-decoration: none;">careers@viva-impact.org</a>. We keep strong candidates in mind for future roles.</p>
@@ -107,7 +108,7 @@
         </section>
 
         <!-- What We Offer Section -->
-        <section class="section fade-in-section">
+        <section class="section" data-aos="fade-up">
             <div class="container">
                 <h2>What We Offer</h2>
                 <div class="approach-list">
@@ -141,7 +142,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="site-footer fade-in-section">
+    <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Contact Us</h3>
@@ -176,5 +177,15 @@
 
     <!-- JavaScript -->
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     AOS.init({
+    duration: 1050,
+    easing: 'ease-in-out',
+    once: true,
+    offset: 50,
+    delay: 0
+  });
+</script>
 </body>
 </html>

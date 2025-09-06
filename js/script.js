@@ -51,43 +51,47 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+  // Check if screen is mobile-sized
+function isMobile() {
+  return window.innerWidth <= 768;
+}
 
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
+// Initialize hamburger menu when DOM is loaded
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
 
-  // Fade-in animation for sections on scroll
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
+  if (hamburger && navLinks) {
+    // ... your existing hamburger code ...
+
+    // ✅ NEW: Scroll listener to detect when header leaves viewport
+    const header = document.querySelector('header');
+
+    if (header) {
+      let headerBottom = header.offsetHeight; // Get header height
+      let headerExitedViewport = false; // Prevent repeated logs
+
+      window.addEventListener('scroll', function () {
+        const scrollY = window.scrollY || window.pageYOffset;
+
+        // Check if scrolled PAST the header
+        if (scrollY > headerBottom && !headerExitedViewport) {
+          console.log('✅ Header has scrolled out of view');
+          headerExitedViewport = true; // Only log once
+        }
+
+        // Optional: Reset if user scrolls back up
+        if (scrollY <= headerBottom) {
+          headerExitedViewport = false;
+          // console.log('Header is back in view');
         }
       });
-    },
-    { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
-  );
 
-  // Initialize fade-in sections
-  document.querySelectorAll('.fade-in-section').forEach(section => {
-    // Check if element is already in viewport on page load
-    const rect = section.getBoundingClientRect();
-    const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
-    
-    if (isInViewport) {
-      // Add visible class immediately for elements already in view
-      section.classList.add('visible');
+      // Optional: Update header height on resize (in case it changes)
+      window.addEventListener('resize', function () {
+        headerBottom = header.offsetHeight;
+      });
     }
-    
-    observer.observe(section);
-  });
+  }
+});
 });

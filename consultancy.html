@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viva Impact Consultancy - Innovate with Us. Achieve Success.</title>
-    <link rel="stylesheet" href="./style/blue.css">
+    <link rel="stylesheet" href="./style/blue.css" rel="stylesheet" />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body class="theme-blue">
@@ -44,7 +45,7 @@
             </div>
         </section>
 
-        <section class="consultancy-section fade-in-section">
+        <section class="consultancy-section" data-aos="fade-up">
             <div class="container">
                 <h2 class="heich">Our Services</h2>
                 <div class="service-area">
@@ -85,7 +86,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="site-footer fade-in-section">
+    <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-section">
                 <h3 style="text-align:center;">Contact Us</h3>
@@ -120,5 +121,15 @@
 
     <!-- JavaScript -->
     <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<   script>
+    AOS.init({
+    duration: 1050,
+    easing: 'ease-in-out',
+    once: true,
+    offset: 50,
+    delay: 0
+  });
+</script>
 </body>
 </html>
