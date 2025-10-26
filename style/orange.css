@@ -128,6 +128,7 @@ header .nav-links .donate-button {
 .donate-button:hover {
 	background: white !important;
 	box-shadow: 0 0px 0px !important;
+    transform: translateY(2.5px) !important74;
 }
 
 /* Hamburger Menu Styles - CRITICAL FIX */
@@ -292,13 +293,16 @@ header .nav-links .donate-button {
     background: white;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    border-top: 4px solid var(--primary-accent);
+    border-top: 0.1px solid var(--primary-accent);
+    border-bottom: 0.1px solid var(--primary-accent);
+    border-left: 0.1px solid var(--primary-accent);
+    border-right: 0.1px solid var(--primary-accent);
     transition: transform 0.3s ease;
 }
 
 .arm-box:hover {
     transform: translateY(-5px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .arm-icon {
@@ -322,9 +326,9 @@ header .nav-links .donate-button {
     transition: gap 0.3s ease;
 }
 
-.learn-more:hover {
-    gap: 1rem;
-}
+/*.learn-more:hover {
+
+}/*
 
 /* Team Section */
 .members-section {
@@ -556,3 +560,13 @@ header .nav-links .donate-button {
         min-width: 180px;
     }
 }
+.scroll-fade {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px; /* fade height */
+    pointer-events: none;
+    background: linear-gradient(to top, white 0%, transparent 100%);
+    transition: opacity 0.3s;
+  }

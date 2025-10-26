@@ -93,9 +93,11 @@ h1, h2, h3, h4 {
 }
 
 .mission-text {
+  text-align: center !important;
   font-size: 1.1rem;
   line-height: 1.8;
   color: var(--text-muted);
+  
 }
 
 /* Mission Bullets */

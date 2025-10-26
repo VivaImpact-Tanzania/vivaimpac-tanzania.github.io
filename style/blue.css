@@ -432,6 +432,7 @@
 
         .consultancy-section:nth-child(even) {
             background: #f8f9fa;
+            /*background: #f8f9fa*/
         }
 
         .service-area {
@@ -444,14 +445,14 @@
         .service-area .service-card {
             background: white;
             padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            border-top: 4px solid var(--primary-accent);
+            border-radius: 8px;
+            
             transition: transform 0.3s ease;
         }
 
         .service-area .service-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-2.5px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
         }
 
         .service-area .service-card h3 {
