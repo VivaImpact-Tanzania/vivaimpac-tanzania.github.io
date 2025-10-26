@@ -142,14 +142,14 @@ h1, h2, h3, h4 {
   background: white;
   padding: 2.5rem;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  border-top: 5px solid var(--primary-accent);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.2s ease-in-out !important;
+  z-index: 1;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transform: translateY(-1.8px) !important;
+  box-shadow: 0 7.7px 10px rgba(0,0,0,0.15);
+  z-index: 2 2;
 }
 
 .service-card h4 {
